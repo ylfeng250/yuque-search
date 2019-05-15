@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "语雀查询",
+    "version": "1.0.0",
+    "description": "1119030015@qq.com",
+    "icons": {
+        "16":"static/img/icon.png",
+        "19":"static/img/icon.png",
+        "38":"static/img/icon.png",
+        "48": "static/img/icon.png",
+		"128": "static/img/icon.png"
+    },
+    "browser_action":
+    {
+        "default_icon": "static/img/icon.png",
+        "default_title": "语雀查询",
+        "default_popup": "popup.html"
+    },
+    "omnibox":{"keyword":"yuque"},
+    "background":
+    {
+        "persistent": true,
+        "scripts": ["background.main.js"]
+    },
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+    ]
+}
